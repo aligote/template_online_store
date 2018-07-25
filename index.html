@@ -38,82 +38,86 @@
 		</div>
 
 		<div id="slide2" class="tabcontent">
-				<div class="mySlides2">
-						<img src="asset/slide1.png" style="width:100%">
-					</div>
-					<div class="mySlides2">
-						<img src="asset/slide2.png" style="width:100%">
-					</div>
-					<div class="mySlides2">
-						<img src="asset/slide1.png" style="width:100%">
-					</div>
-					<a class="prev"  onclick="plusSlides(-1, 1)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+			<div class="mySlides2">
+				<img src="asset/slide1.png" style="width:100%">
+			</div>
+			<div class="mySlides2">
+				<img src="asset/slide2.png" style="width:100%">
+			</div>
+			<div class="mySlides2">
+				<img src="asset/slide1.png" style="width:100%">
+			</div>
+			<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 		</div>
 
 		<div id="slide3" class="tabcontent">
-				<div class="mySlides3">
-						<img src="asset/slide1.png" style="width:100%">
-					</div>
-					<div class="mySlides3">
-						<img src="asset/slide2.png" style="width:100%">
-					</div>
-					<div class="mySlides3">
-						<img src="asset/slide1.png" style="width:100%">
-					</div>
-					<a class="prev"  onclick="plusSlides(-1, 2)">&#10094;</a>
-					<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+			<div class="mySlides3">
+				<img src="asset/slide1.png" style="width:100%">
+			</div>
+			<div class="mySlides3">
+				<img src="asset/slide2.png" style="width:100%">
+			</div>
+			<div class="mySlides3">
+				<img src="asset/slide1.png" style="width:100%">
+			</div>
+			<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
 		</div>
 		<div class="tab-bar">
 			<div class="tablink" onclick="openCity('slide1', this, 'white')" id="defaultOpen">Koleksi Batik Pria</div>
 			<div class="tablink" onclick="openCity('slide2', this, 'white')">accessories & jewelry</div>
 			<div class="tablink" onclick="openCity('slide3', this, 'white')">smart tv</div>
 		</div>
-		
+
 		<div class="tab-product">
-			<div class="tab-product-content">weekday</div>
-			<div class="tab-product-content">weekend</div>
+			<div class="tab-product-content" onclick="libur(event, 'weekday')">weekday</div>
+			<div class="tab-product-content" onclick="libur(event, 'weekend')">weekend</div>
 		</div>
-		<div class="row">
+
+		<div class="row" id="weekday">
 			<div class="column">
 				<div class="product">
 					<img class="img-product" src="asset/poduct1.png" style="width:100%">
 					<div class="container">
-						<p class="text">jam tangan wanita</p> 
-						<p class="text-coret">Rp.1.500.000</p> 
+						<p class="text">jam tangan wanita</p>
+						<p class="text-coret">Rp.1.500.000</p>
 						<p class="text-disc">Rp. 92.100</p>
 					</div>
 					<div class="disc">94% off</div>
 				</div>
 			</div>
+
 			<div class="column">
 				<div class="product">
 					<img class="img-product" src="asset/poduct2.png" style="width:100%">
 					<div class="container">
-						<p class="text">jam tangan pria</p> 
-						<p class="text-coret">Rp.2.500.000</p> 
+						<p class="text">jam tangan pria</p>
+						<p class="text-coret">Rp.2.500.000</p>
 						<p class="text-disc">Rp. 185.100</p>
 					</div>
 					<div class="disc">93% off</div>
 				</div>
 			</div>
+
 			<div class="column">
 				<div class="product">
 					<img class="img-product" src="asset/poduct3.png" style="width:100%">
 					<div class="container">
 						<p class="text">new lovely women buckle</p>
-						<p class="text-coret">Rp.475.000</p> 
+						<p class="text-coret">Rp.475.000</p>
 						<p class="text-disc">Rp. 36.300</p>
 					</div>
 					<div class="disc">92% off</div>
 				</div>
 			</div>
+
 			<div class="column">
 				<div class="product">
 					<img class="img-product" src="asset/poduct4.png" style="width:100%">
 					<div class="container">
-						<p class="text"> new mens automatic buckle</p> 
-						<p class="text-coret">Rp.940.000</p> 
+						<p class="text"> new mens automatic buckle</p>
+						<p class="text-coret">Rp.940.000</p>
 						<p class="text-disc">Rp. 82.800</p>
 					</div>
 					<div class="disc">91% off</div>
@@ -122,6 +126,56 @@
 		</div>
 	</div>
 
+	<div class="row" id="weekend">
+			<div class="column">
+				<div class="product">
+					<img class="img-product" src="asset/poduct1.png" style="width:100%">
+					<div class="container">
+						<p class="text">jam tangan wanita</p>
+						<p class="text-coret">Rp.1.500.000</p>
+						<p class="text-disc">Rp. 92.100</p>
+					</div>
+					<div class="disc">94% off</div>
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="product">
+					<img class="img-product" src="asset/poduct3.png" style="width:100%">
+					<div class="container">
+						<p class="text">new lovely women buckle</p>
+						<p class="text-coret">Rp.475.000</p>
+						<p class="text-disc">Rp. 36.300</p>
+					</div>
+					<div class="disc">92% off</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="product">
+					<img class="img-product" src="asset/poduct2.png" style="width:100%">
+					<div class="container">
+						<p class="text">jam tangan pria</p>
+						<p class="text-coret">Rp.2.500.000</p>
+						<p class="text-disc">Rp. 185.100</p>
+					</div>
+					<div class="disc">93% off</div>
+				</div>
+			</div>
+			
+
+			<div class="column">
+				<div class="product">
+					<img class="img-product" src="asset/poduct4.png" style="width:100%">
+					<div class="container">
+						<p class="text"> new mens automatic buckle</p>
+						<p class="text-coret">Rp.940.000</p>
+						<p class="text-disc">Rp. 82.800</p>
+					</div>
+					<div class="disc">91% off</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="js/slide.js"></script>
