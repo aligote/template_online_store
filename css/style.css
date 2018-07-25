@@ -176,3 +176,15 @@ img {vertical-align: middle;}
   color: #fff;
   height: 85px;
 }
+@media only screen and (max-width:982px) {
+  /* For mobile phones: */
+ .promo-page, 
+ .menu-bar, 
+ .menu-bar-item, 
+ .tab-bar,
+ .tablink,
+ .tab-product,
+ .tab-product-content {
+    width:100%;
+  }
+}
