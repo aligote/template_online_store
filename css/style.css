@@ -59,13 +59,12 @@ img {vertical-align: middle;}
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -100px;
+  margin-top: -270px;
   padding: 16px;
   color: grey;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
@@ -176,20 +175,12 @@ img {vertical-align: middle;}
   color: #fff;
   height: 85px;
 }
-.product-container{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 982px;
-  height: 348px;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 0px;
-}
 
 .img-product{
-  width: 245px;
-  height: 245px;
+  max-width: 100%;
+  height: auto;
+  width: 245.5px;
+  height: 245.5px;
 }
 .product {
   /* Add shadows to create the "product" effect */
@@ -197,7 +188,7 @@ img {vertical-align: middle;}
 }
 /* On mouse-over, add a deeper shadow */
 .product:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 29px 0 rgba(0,0,0,0.4);
 }
 
 /* Add some padding inside the card container */
@@ -209,10 +200,27 @@ img {vertical-align: middle;}
   font-size: 14px;
   letter-spacing: -0.53px;
 }
+.column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100%);
+  grid-template-rows: repeat(4, 100%);
+  float: right;
+  padding: 0px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .text{
   color: #464757;
   line-height: 24px;
+  font-weight: bold;
   
 }
 .text-coret{
@@ -230,8 +238,19 @@ img {vertical-align: middle;}
   letter-spacing: -0.68px;
 }
 
-@media screen and (max-width:982px) {
-  /* For mobile phones: */
+.disc{
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  color: #fff;
+  margin-top: -359px;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* For mobile phones: */
+/* @media only screen and (min-width:300px) {.prev,.next{font-size: 11px}} */
+@media only screen and (max-width:982px) {
  .promo-page, 
  .menu-bar, 
  .menu-bar-item, 
@@ -239,9 +258,8 @@ img {vertical-align: middle;}
  .tablink,
  .tab-product,
  .tab-product-content,
- .product,
- .product-container,
- .container {
+ .img-product,.product,.container
+  {
     width:100%;
   }
 }
