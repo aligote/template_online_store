@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<title>Global Store</title>
+</head>
+
+<body>
+	<div class="promo-page"></div>
+	<div class="menu-bar">
+		<div class="menu-bar-item">Brand</div>
+		<div class="menu-bar-item">free shiping indonesia</div>
+		<div class="menu-bar-item">e-apotek</div>
+		<div class="menu-bar-item">parfume & deodorant</div>
+		<div class="menu-bar-item">bath & bodycare</div>
+	</div>
+
+	<div class="slideshow-container">
+		<div id="slide1" class="tabcontent">
+			<div class="mySlides1">
+				<img src="asset/slide1.png" style="width:100%">
+			</div>
+			<div class="mySlides1">
+				<img src="asset/slide2.png" style="width:100%">
+			</div>
+			<div class="mySlides1">
+				<img src="asset/slide1.png" style="width:100%">
+			</div>
+			<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+		</div>
+
+		<div id="slide2" class="tabcontent">
+				<div class="mySlides2">
+						<img src="asset/slide1.png" style="width:100%">
+					</div>
+					<div class="mySlides2">
+						<img src="asset/slide2.png" style="width:100%">
+					</div>
+					<div class="mySlides2">
+						<img src="asset/slide1.png" style="width:100%">
+					</div>
+					<a class="prev"  onclick="plusSlides(-1, 1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+		</div>
+
+		<div id="slide3" class="tabcontent">
+				<div class="mySlides3">
+						<img src="asset/slide1.png" style="width:100%">
+					</div>
+					<div class="mySlides3">
+						<img src="asset/slide2.png" style="width:100%">
+					</div>
+					<div class="mySlides3">
+						<img src="asset/slide1.png" style="width:100%">
+					</div>
+					<a class="prev"  onclick="plusSlides(-1, 2)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+		</div>
+		<div class="tab-bar">
+			<div class="tablink" onclick="openCity('slide1', this, 'white')" id="defaultOpen">Koleksi Batik Pria</div>
+			<div class="tablink" onclick="openCity('slide2', this, 'white')">accessories & jewelry</div>
+			<div class="tablink" onclick="openCity('slide3', this, 'white')">smart tv</div>
+		</div>
+		
+		<div class="tab-product">
+			<div class="tab-product-content">weekday</div>
+			<div class="tab-product-content">weekend</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/slide.js"></script>
+</body>
+
+</html>

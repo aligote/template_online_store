@@ -1,0 +1,178 @@
+body{
+    font-family: 'Open Sans', sans-serif; 
+}
+.promo-page {
+    background-image: url('../asset/header.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    height: 508px;
+    display: block;
+}
+.menu-bar{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 982px;
+    height: 66px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 1px;
+}
+
+.menu-bar-item{
+    background-color: #434343;
+    padding: 23px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: 0.6s;
+    cursor: pointer;
+    width: 196px;
+}
+.menu-bar-item:hover{opacity: 0.6;}
+
+
+/* bagian slider */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 980px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color:#ffffff;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.tab-bar{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 982px;
+  height: 52px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0px;
+}
+.tablink {
+  background-color:#f0f0f0;
+  color: #000000;
+  margin: 0px;
+  padding: 15px 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  height: 51px;
+  width: 327px;
+  opacity: 1;
+  transition: 0.6s;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  opacity: 0.4;
+  color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* Style each tab content individually */ 
+#slide1 {background-color:none;}
+#slide2 {background-color:none;}
+#slide3 {background-color:none;}
+
+.tab-product{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 982px;
+  height: 94px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+  background-color: #2896a8;
+}
+.tab-product-content {
+  background-color:#434343;
+  color: #ffffff;
+  margin: 0px;
+  padding: 25px 0;
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  height: 94px;
+  width: 491px;
+  transition: 0.6s;
+}
+
+.tab-product-content:hover {
+  background-color:#434343; 
+  color: #fff;
+  height: 85px;
+}
