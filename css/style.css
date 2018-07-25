@@ -176,7 +176,61 @@ img {vertical-align: middle;}
   color: #fff;
   height: 85px;
 }
-@media only screen and (max-width:982px) {
+.product-container{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 982px;
+  height: 348px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0px;
+}
+
+.img-product{
+  width: 245px;
+  height: 245px;
+}
+.product {
+  /* Add shadows to create the "product" effect */
+  transition: 0.3s;
+}
+/* On mouse-over, add a deeper shadow */
+.product:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  text-align: center;
+  padding: 2px 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.53px;
+}
+
+.text{
+  color: #464757;
+  line-height: 24px;
+  
+}
+.text-coret{
+  color: #464757;
+  text-decoration: line-through;
+  line-height: 24px;
+  letter-spacing: -0.53px;
+}
+
+.text-disc{
+  margin-top: -15px;
+  color: #ff000b;
+  font-size: 18px;
+  line-height: 16.94px;
+  letter-spacing: -0.68px;
+}
+
+@media screen and (max-width:982px) {
   /* For mobile phones: */
  .promo-page, 
  .menu-bar, 
@@ -184,7 +238,10 @@ img {vertical-align: middle;}
  .tab-bar,
  .tablink,
  .tab-product,
- .tab-product-content {
+ .tab-product-content,
+ .product,
+ .product-container,
+ .container {
     width:100%;
   }
 }
