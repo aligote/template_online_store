@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -71,7 +71,7 @@
 		</div>
 
 		<div class="tab-product">
-			<div class="tab-product-content" onclick="libur(event, 'weekday')">weekday</div>
+			<div class="tab-product-content" id="defaultContent" onclick="libur(event, 'weekday')">weekday</div>
 			<div class="tab-product-content" onclick="libur(event, 'weekend')">weekend</div>
 		</div>
 
@@ -127,52 +127,68 @@
 	</div>
 
 	<div class="row" id="weekend">
-			<div class="column">
-				<div class="product">
-					<img class="img-product" src="asset/poduct1.png" style="width:100%">
-					<div class="container">
-						<p class="text">jam tangan wanita</p>
-						<p class="text-coret">Rp.1.500.000</p>
-						<p class="text-disc">Rp. 92.100</p>
-					</div>
-					<div class="disc">94% off</div>
+		<div class="column">
+			<div class="product">
+				<img class="img-product" src="asset/poduct1.png" style="width:100%">
+				<div class="container">
+					<p class="text">jam tangan wanita</p>
+					<p class="text-coret">Rp.1.500.000</p>
+					<p class="text-disc">Rp. 92.100</p>
 				</div>
+				<div class="disc">94% off</div>
 			</div>
-			
-			<div class="column">
-				<div class="product">
-					<img class="img-product" src="asset/poduct3.png" style="width:100%">
-					<div class="container">
-						<p class="text">new lovely women buckle</p>
-						<p class="text-coret">Rp.475.000</p>
-						<p class="text-disc">Rp. 36.300</p>
-					</div>
-					<div class="disc">92% off</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="product">
-					<img class="img-product" src="asset/poduct2.png" style="width:100%">
-					<div class="container">
-						<p class="text">jam tangan pria</p>
-						<p class="text-coret">Rp.2.500.000</p>
-						<p class="text-disc">Rp. 185.100</p>
-					</div>
-					<div class="disc">93% off</div>
-				</div>
-			</div>
-			
+		</div>
 
-			<div class="column">
-				<div class="product">
-					<img class="img-product" src="asset/poduct4.png" style="width:100%">
-					<div class="container">
-						<p class="text"> new mens automatic buckle</p>
-						<p class="text-coret">Rp.940.000</p>
-						<p class="text-disc">Rp. 82.800</p>
-					</div>
-					<div class="disc">91% off</div>
+		<div class="column">
+			<div class="product">
+				<img class="img-product" src="asset/poduct3.png" style="width:100%">
+				<div class="container">
+					<p class="text">new lovely women buckle</p>
+					<p class="text-coret">Rp.475.000</p>
+					<p class="text-disc">Rp. 36.300</p>
 				</div>
+				<div class="disc">92% off</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="product">
+				<img class="img-product" src="asset/poduct2.png" style="width:100%">
+				<div class="container">
+					<p class="text">jam tangan pria</p>
+					<p class="text-coret">Rp.2.500.000</p>
+					<p class="text-disc">Rp. 185.100</p>
+				</div>
+				<div class="disc">93% off</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="product">
+				<img class="img-product" src="asset/poduct4.png" style="width:100%">
+				<div class="container">
+					<p class="text"> new mens automatic buckle</p>
+					<p class="text-coret">Rp.940.000</p>
+					<p class="text-disc">Rp. 82.800</p>
+				</div>
+				<div class="disc">91% off</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="footer-container">
+		<div class="footer" onclick="myFunction()">syarat & ketentuan &nbsp;&nbsp;
+			<i class="fa fa-caret-down" style="font-size:12px"></i>
+		</div>
+		<div class="dropdown-content" id="myDropdown">
+			<div class="footer-text">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a scelerisque sapien, 
+				ullamcorper congue turpis. Nullam imperdiet metus et suscipit fermentum. 
+				Aliquam viverra dui sit amet ante elementum luctus. 
+				Sed et tellus semper, pulvinar ante vestibulum, volutpat risus.
+				Nulla nibh nunc, scelerisque quis lobortis at, mollis ac est.
+			</div>
+			<div class="footer-btn">
+				<a href="#"><img class="img-footer" src="asset/click.png" style="width:100%" alt="klik disini"></a>
 			</div>
 		</div>
 	</div>
