@@ -1,8 +1,18 @@
 body{
     font-family: 'Open Sans', sans-serif; 
 }
+#anim {
+    -webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 3s infinite;
+}
+@-webkit-keyframes mymove {
+  50% {padding-top: 20px;}
+}
+@keyframes mymove {
+  50% {padding-top: 20px;}
+}
 .promo-page {
-    background-image: url('../asset/header.jpg');
+    background-image: url('../asset/header.png');
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
