@@ -32,12 +32,9 @@ function openCity(tabSlide, elmnt, color) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
-
   document.getElementById(tabSlide).style.display = "block";
-
   elmnt.style.backgroundColor = color;
 }
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
@@ -68,11 +65,11 @@ function myFunction() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-if (!e.target.matches('.footer')) {
-  var myDropdown = document.getElementById("myDropdown");
+window.onclick = function (e) {
+  if (!e.target.matches('.footer')) {
+    var myDropdown = document.getElementById("myDropdown");
     if (myDropdown.classList.contains('show')) {
       myDropdown.classList.remove('show');
     }
-}
+  }
 }

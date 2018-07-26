@@ -57,16 +57,12 @@ img {vertical-align: middle;}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  float:left;
-  top: 50%;
+  float: right;;
+  top: 25%;
   width: auto;
-  margin-top: -20px;
   padding: 16px;
   color: grey;
-  font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
-  user-select: none;
 }
 
 .next {
@@ -179,15 +175,12 @@ img {vertical-align: middle;}
 
 .img-product{
   max-width: 100%;
-  height: auto;
   width: 245.5px;
   height: 245.5px;
 }
 .product {
-  /* Add shadows to create the "product" effect */
   transition: 0.3s;
 }
-/* On mouse-over, add a deeper shadow */
 .product:hover {
   box-shadow: 0 8px 29px 0 rgba(0,0,0,0.4);
 }
@@ -202,26 +195,25 @@ img {vertical-align: middle;}
   letter-spacing: -0.53px;
 }
 .column {
+  vertical-align: middle;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   display: grid;
+  grid-gap: 0px;
   grid-template-columns: repeat(auto-fit, 100%);
-  grid-template-rows: repeat(4, 100%);
-  float: right;
-  padding: 0px;
+  grid-template-rows: repeat(1, 100%);
+  float: left;
   margin-bottom: 5px;
   cursor: pointer;
 }
 
 /* Clear floats after the columns */
 .row:after {
-  width: 982px;
+  max-width: 982px;
   content: "";
   display: table;
   clear: both;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .text{
@@ -277,53 +269,58 @@ img {vertical-align: middle;}
   position: relative;
   display: block;
 }
-* {
-  box-sizing: border-box;
+.group:after {
+  content:"";
+  display: table;
+  clear: both;
 }
 .dropdown-content {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 0px;
-  width: 980px;
+  display: none;
+  width: 982px;
   height: 199px;
   background-color: #2896a8;
   position: absolute;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   font-weight: bold;
   line-height: 18px;
   letter-spacing: -0.11px;
   margin-bottom: 5px;
+  float: none;
 }
 .footer-text{
-  
-  width: 100%;
+  width: 65%;
   font-size: 12px;
   float: left;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-right: 30px;
-  padding-top:60px;
-  padding-bottom:60px;
+  padding-top:30px;
+  padding-bottom: 0px;
 }
 .footer-btn{
-  width: 100%;
-  padding-top:60px;
+  width: 35%;
+  padding-top:55px;
   padding-right: 50px;
   float:right;
   text-align: center;
 }
 
 .img-footer{
+  max-width: 227px;
   width: 227px;
-  height: 48px;
+  height: auto;
 }
-
 .show {
   display: block;
 }
+@media screen and (max-width: 480px) {
+  .footer-text, .footer-btn {
+      float: none;
+      width: auto;
+  }
+}
 /* For mobile phones: */
-@media only screen and (max-width:300px) {.prev,.next, .text{font-size: 11px}}
+/* @media only screen and (max-width:300px) {.prev,.next, .text{font-size: 11px}} */
 @media only screen and (max-width:982px) {
  .promo-page, 
  .slideshow-container,
