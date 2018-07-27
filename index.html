@@ -225,22 +225,22 @@
         if (day>4) {
             if (time > 10) {
                 $('#weekday-close').attr('hidden', true)
-                $('#weekday-open').attr('hidden', true)
-                $('#weekend-close').attr('hidden', true)
+                $('#weekday-open').attr('hidden', false)
+                $('#weekend-close').attr('hidden', false)
                 $('#weekend-open').attr('hidden', true)
             }
             else {
-                $('#weekend-close').attr('hidden', true)
-                $('#weekend-open').attr('hidden', true)
+                $('#weekend-close').attr('hidden', false)
+                $('#weekend-open').attr('hidden', false)
                 $('#weekday-close').attr('hidden', false)
                 $('#weekday-open').attr('hidden', false)
             }
         } else {
             if (time > 10) {
-                $('#weekend-close').attr('hidden', true)
-                $('#weekend-open').attr('hidden', true)
-                $('#weekday-close').attr('hidden', true)
-                $('#weekday-open').attr('hidden', true)
+                $('#weekend-close').attr('hidden', false)
+                $('#weekend-open').attr('hidden', false)
+                $('#weekday-close').attr('hidden', false)
+                $('#weekday-open').attr('hidden', false)
             }
             else {
                 $('#weekend-close').attr('hidden', true)
